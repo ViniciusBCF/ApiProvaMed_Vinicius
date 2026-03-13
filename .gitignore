@@ -1,0 +1,41 @@
+# Build artifacts
+**/bin/
+**/obj/
+**/out/
+**/TestResults/
+
+# Visual Studio / Rider / VS Code
+.vs/
+**/.vs/
+.idea/
+**/.idea/
+.vscode/
+**/.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet / local tooling
+packages/
+artifacts/
+.dotnet_home/
+
+# Logs and temporary diagnostics
+*.log
+_tmp_build_diag.log
+_tmp_service_build_diag.log
+_objcheck/
+
+# OS files
+Thumbs.db
+Desktop.ini
+
+# Local database / generated runtime files
+*.db
+*.sqlite
+*.sqlite3
+
+# Optional local secrets overrides
+appsettings.Local.json
+appsettings.*.local.json

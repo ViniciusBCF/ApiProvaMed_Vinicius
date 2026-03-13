@@ -1,0 +1,43 @@
+# Ajuste para sua execucao local (VS/dotnet run) ou Docker
+@ApiMedTest_HostAddress = http://localhost:8080
+@contatoId = 00000000-0000-0000-0000-000000000000
+
+### 1) Criar contato
+POST {{ApiMedTest_HostAddress}}/api/contatos
+Content-Type: application/json
+
+{
+  "nomeContato": "Maria Oliveira",
+  "dataNascimento": "1990-01-10",
+  "sexo": "Feminino"
+}
+
+### 2) Listar contatos ativos
+GET {{ApiMedTest_HostAddress}}/api/contatos
+Accept: application/json
+
+### 3) Buscar contato ativo por id
+GET {{ApiMedTest_HostAddress}}/api/contatos/{{contatoId}}
+Accept: application/json
+
+### 4) Atualizar contato ativo
+PUT {{ApiMedTest_HostAddress}}/api/contatos/{{contatoId}}
+Content-Type: application/json
+
+{
+  "nomeContato": "Maria Oliveira Souza",
+  "dataNascimento": "1990-01-10",
+  "sexo": "Feminino"
+}
+
+### 5) Desativar contato
+PATCH {{ApiMedTest_HostAddress}}/api/contatos/{{contatoId}}/desativar
+Accept: application/json
+
+### 6) Ativar contato
+PATCH {{ApiMedTest_HostAddress}}/api/contatos/{{contatoId}}/ativar
+Accept: application/json
+
+### 7) Excluir contato
+DELETE {{ApiMedTest_HostAddress}}/api/contatos/{{contatoId}}
+Accept: application/json

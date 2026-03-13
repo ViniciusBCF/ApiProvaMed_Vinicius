@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Itens de Solução/">
+    <File Path="../docker-compose.yml" />
+  </Folder>
+  <Project Path="../ApiMedTest.Data/ApiMedTest.Data.csproj" />
+  <Project Path="../ApiMedTest.Domain/ApiMedTest.Domain.csproj" />
+  <Project Path="../ApiMedTest.Service/ApiMedTest.Service.csproj" />
+  <Project Path="../ApiMedTest.Tests/ApiMedTest.Tests.csproj" />
+  <Project Path="ApiMedTest.csproj" />
+</Solution>
